@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anish Shilpakar — AI & Data Engineer</title>
+<meta name="description" content="Portfolio of Anish Shilpakar — Senior Data Engineer, AI/ML researcher, and educator based in Bhaktapur, Nepal.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script>
+  // Set theme before paint to avoid a flash of the wrong theme.
+  document.documentElement.setAttribute('data-theme', localStorage.getItem('anish-portfolio-theme') || 'light');
+</script>
+</head>
+<body>
+
+<div id="intro-overlay" aria-hidden="true">
+  <div class="intro-panel intro-panel-top"></div>
+  <div class="intro-panel intro-panel-bottom"></div>
+  <div class="intro-seal">AN!SH</div>
+</div>
+
+<div id="cursor-ring" aria-hidden="true"></div>
+<div id="cursor-dot" aria-hidden="true"></div>
+
+<nav class="nav">
+  <a href="#hero" class="nav-logo">AN!SH</a>
+  <div class="nav-right">
+    <div class="nav-links" id="nav-links"></div>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle color theme" type="button">
+      <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+      <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </button>
+  </div>
+</nav>
+
+<section id="hero">
+  <div>
+    <p class="hero-kicker">Senior Data Engineer &middot; AI/NLP Researcher &middot; Educator</p>
+    <h1 class="hero-name">Anish Shilpakar</h1>
+    <p class="hero-tagline">Building ETL pipelines and dashboards that turn raw data into decisions by day, and teaching machines to listen to the world's quieter languages by night — from Bhaktapur, Nepal.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Get in touch</a>
+      <a href="assets/docs/Anish_Shilpakar_Academic_CV_Detailed.pdf" download class="btn-secondary">Download resume</a>
+      <a href="https://linkedin.com/in/anish-shilpakar13" target="_blank" rel="noopener" class="link-plain">LinkedIn</a>
+      <a href="https://github.com/juju2181" target="_blank" rel="noopener" class="link-plain">GitHub</a>
+    </div>
+    <div class="hero-badges" id="hero-badges"></div>
+  </div>
+  <div class="hero-photo-wrap">
+    <img class="hero-photo" src="assets/images/hero-photo.jpg" alt="Portrait of Anish Shilpakar" onerror="this.replaceWith(Object.assign(document.createElement('div'), {className: 'hero-photo', textContent: 'Drop hero-photo.jpg into assets/images', style: 'display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;font-size:13px;color:var(--text-dim);'}))">
+  </div>
+</section>
+
+<section id="about">
+  <div class="about-inner">
+    <p class="section-kicker">About Me</p>
+    <p class="about-lead">3.5 years turning messy data into production systems for banking and healthcare &mdash; and evenings spent teaching machines to understand languages mainstream AI has never heard.</p>
+    <p class="about-body">I've grown from data engineering apprentice to senior engineer and architect across AWS and Azure, shipping ETL pipelines, RAG applications, and LLM tooling for clients in banking and healthcare. In parallel, I am researching on automatic speech recognition and NLP for Nepali and medical contexts. I've also worked on audio source separation for Newari traditional music, and on computer vision projects like a Nepali number plate recognition system.<br><br>I'm also an educator at heart — teaching data engineering, data analysis, and data science, and mentoring final-year students through their AI projects. I believe knowledge is worth more when it's shared, and I try to teach it as simply and widely as I can. 
+    <br><br> 
+    What I'm chasing next lives at that intersection — research built to run in production, solving real problems, not just proving a point.</p>
+    <blockquote class="about-quote">
+      &ldquo;I don't think I can do this. I don't know how to do this. But I have to try. I have to try because if I don't, everything we love is gone.&rdquo;
+      <cite>&mdash; Loki (<i>the god of stories</i> ) 💚 </cite>
+    </blockquote>
+    <p class="about-body" style="margin-bottom: 0;">Outside of work, I'm usually behind a camera, a few chapters into a book, or a few days into a trek.</p>
+    <p class="about-stack-label">Core stack</p>
+    <div class="skills-list" id="skills-list"></div>
+  </div>
+</section>
+
+<section id="experience">
+  <p class="section-kicker">Experience &amp; Education</p>
+  <!-- <h2 class="section-title">Through the years</h2> -->
+  <div class="timeline" id="timeline"></div>
+</section>
+
+<section id="projects">
+  <div class="projects-inner">
+    <p class="section-kicker">Projects &amp; Research</p>
+    <h2 class="section-title">My Work on Data and AI</h2>
+
+    <div class="tabs">
+      <button class="tab-btn" id="tab-research" type="button">Research</button>
+      <button class="tab-btn" id="tab-projects" type="button">Projects</button>
+    </div>
+
+    <div id="research-panel" class="fade-up">
+      <div class="card-grid" id="research-grid"></div>
+    </div>
+
+    <div id="projects-panel" class="fade-up">
+      <div class="filter-chips" id="filter-chips"></div>
+      <div class="card-grid" id="projects-grid"></div>
+    </div>
+
+    <div class="projects-cta">
+      <a href="https://github.com/juju2181" target="_blank" rel="noopener" class="btn-secondary">View all projects</a>
+    </div>
+  </div>
+</section>
+
+<section id="blog">
+  <div class="blog-head">
+    <div>
+      <p class="section-kicker">Writing</p>
+      <h2 class="section-title">Blog</h2>
+    </div>
+    <a href="https://anish-shilpakar.com.np/" target="_blank" rel="noopener" class="btn-secondary">View all posts</a>
+  </div>
+  <div class="blog-grid" id="blog-grid"></div>
+</section>
+
+<section id="beyond">
+  <div class="beyond-inner">
+    <p class="section-kicker">Take a Breath</p>
+    <h2 class="section-title">Beyond Work</h2>
+
+    <div class="beyond-grid">
+      <div>
+        <div class="beyond-sub-head">
+          <h3>Photography</h3>
+          <a href="https://www.pinterest.com/anishshilpakar/daily-snaps/" target="_blank" rel="noopener">View more &rarr;</a>
+        </div>
+        <div class="photo-grid" id="photo-grid"></div>
+      </div>
+      <div class="book-col">
+        <h3>Currently reading</h3>
+        <div class="book-list" id="current-books"></div>
+        <h3>Past reads</h3>
+        <div class="book-list" id="past-books"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <p class="section-kicker">Contact</p>
+  <h2 class="section-title">Let's talk</h2>
+  <div class="contact-grid">
+    <div class="contact-links">
+      <a href="mailto:anishshilpakar8@gmail.com">anishshilpakar8@gmail.com</a>
+      <a href="https://linkedin.com/in/anish-shilpakar13" target="_blank" rel="noopener">linkedin.com/in/anish-shilpakar13</a>
+      <a href="https://github.com/juju2181" target="_blank" rel="noopener">github.com/juju2181</a>
+      <span>Bhaktapur, Nepal</span>
+    </div>
+    <form class="contact-form" id="contact-form">
+      <input type="text" name="from_name" placeholder="Name" required>
+      <input type="email" name="from_email" placeholder="Email" required>
+      <textarea name="message" placeholder="Message" rows="4" required></textarea>
+      <button type="submit">Send message</button>
+      <span class="contact-form-note" id="contact-form-status"></span>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <p><b>Let there be Light 🌻</b></p><br>
+  <p>&copy; <span id="footer-year"></span> Anish Shilpakar. Made with Love in Bhaktapur, Nepal.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/data.js"></script>
+<script src="js/blog-data.js"></script>
+<script src="js/pinterest-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
