@@ -44,6 +44,21 @@ function initActiveSectionObserver() {
   els.forEach(el => observer.observe(el));
 }
 
+function initBackToTop() {
+  const button = document.getElementById('back-to-top');
+  const hero = document.getElementById('hero');
+  if (!button || !hero) return;
+
+  const observer = new IntersectionObserver(([entry]) => {
+    button.classList.toggle('visible', !entry.isIntersecting);
+  }, { threshold: 0 });
+  observer.observe(hero);
+
+  button.addEventListener('click', () => {
+    hero.scrollIntoView({ behavior: 'smooth' });
+  });
+}
+
 function initIntro() {
   const overlay = document.getElementById('intro-overlay');
   if (!overlay) return;
@@ -300,4 +315,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactForm();
   renderFooterYear();
   initActiveSectionObserver();
+  initBackToTop();
 });
