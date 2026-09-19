@@ -119,11 +119,13 @@ const PROJECTS = [
 // feed by scripts/fetch-blog-posts.js. Re-run that script to refresh it.
 
 const CURRENT_BOOKS = [
-  { title: 'Tuesdays with Morrie', author: 'Mitch Alboom', slotId: 'book-current' }
+  { title: 'The Catcher in the Rye', author: 'J.D. Salinger', slotId: 'book-current' }
 ];
 
 const PAST_BOOKS = [
-  { title: 'The Republic', author: 'Plato', slotId: 'book-past-1' },
-  { title: 'The Stranger', author: 'Albert Camus', slotId: 'book-past-2' },
-  { title: 'Crime and Punishment', author: 'Fyodor Dostoevsky', slotId: 'book-past-3' }
+  { title: 'Frankenstein', author: 'Mary Shelley', slotId: 'book-past-1' },
+  { title: 'Tuesdays with Morrie', author: 'Mitch Albom', slotId: 'book-past-2' },
+  { title: 'The Stranger', author: 'Albert Camus', slotId: 'book-past-3' },
+  { title: 'Crime and Punishment', author: 'Fyodor Dostoevsky', slotId: 'book-past-4' },
+  { title: 'The Metamorphosis', author: 'Franz Kafka', slotId: 'book-past-5' }
 ];
