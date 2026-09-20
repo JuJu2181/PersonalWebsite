@@ -1,12 +1,34 @@
 {
   "current": [
-    { "title": "The Catcher in the Rye", "author": "J.D. Salinger" }
+    {
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger"
+    }
   ],
   "past": [
-    { "title": "Frankenstein", "author": "Mary Shelley" },
-    { "title": "Tuesdays with Morrie", "author": "Mitch Albom" },
-    { "title": "The Stranger", "author": "Albert Camus" },
-    { "title": "Crime and Punishment", "author": "Fyodor Dostoevsky" },
-    { "title": "The Metamorphosis", "author": "Franz Kafka" }
+    {
+      "title": "Frankenstein",
+      "author": "Mary Shelley"
+    },
+    {
+      "title": "Tuesdays with Morrie",
+      "author": "Mitch Albom"
+    },
+    {
+      "title": "The Stranger",
+      "author": "Albert Camus"
+    },
+    {
+      "title": "Crime and Punishment",
+      "author": "Fyodor Dostoevsky"
+    },
+    {
+      "title": "The Metamorphosis",
+      "author": "Franz Kafka"
+    },
+    {
+      "title": "White Nights",
+      "author": "Fyodor Dostoevsky"
+    }
   ]
 }
