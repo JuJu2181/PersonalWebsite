@@ -1,0 +1,28 @@
+backend:
+  name: git-gateway
+  branch: master
+
+publish_mode: simple
+media_folder: assets/images
+public_folder: /assets/images
+
+collections:
+  - name: books
+    label: Books
+    files:
+      - name: books
+        label: Books List
+        file: data/books.json
+        fields:
+          - label: Currently Reading
+            name: current
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Author, name: author, widget: string }
+          - label: Previously Read
+            name: past
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Author, name: author, widget: string }

@@ -118,14 +118,5 @@ const PROJECTS = [
 // BLOG_POSTS lives in js/blog-data.js — generated from the Hashnode RSS
 // feed by scripts/fetch-blog-posts.js. Re-run that script to refresh it.
 
-const CURRENT_BOOKS = [
-  { title: 'The Catcher in the Rye', author: 'J.D. Salinger', slotId: 'book-current' }
-];
-
-const PAST_BOOKS = [
-  { title: 'Frankenstein', author: 'Mary Shelley', slotId: 'book-past-1' },
-  { title: 'Tuesdays with Morrie', author: 'Mitch Albom', slotId: 'book-past-2' },
-  { title: 'The Stranger', author: 'Albert Camus', slotId: 'book-past-3' },
-  { title: 'Crime and Punishment', author: 'Fyodor Dostoevsky', slotId: 'book-past-4' },
-  { title: 'The Metamorphosis', author: 'Franz Kafka', slotId: 'book-past-5' }
-];
+// CURRENT_BOOKS / PAST_BOOKS live in js/books-data.js — generated from
+// data/books.json (editable via the CMS at /admin) by scripts/generate-books-data.js.

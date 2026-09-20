@@ -1,0 +1,3 @@
+[build]
+  command = "node scripts/generate-config.js && node scripts/generate-books-data.js"
+  publish = "."

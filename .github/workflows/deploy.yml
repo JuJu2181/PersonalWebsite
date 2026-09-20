@@ -37,6 +37,9 @@ jobs:
           EOF
           node scripts/generate-config.js
 
+      - name: Generate js/books-data.js from data/books.json
+        run: node scripts/generate-books-data.js
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
